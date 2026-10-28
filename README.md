@@ -1,44 +1,40 @@
-# Aplicación Web - Metodología de Desarrollo en V
+# 🚀 Sistema Web Integral - Módulo de Gestión y Autenticación
 
-Proyecto web desarrollado siguiendo las fases iniciales de la metodología en V solicitada.
+> **Subproyecto:** Desarrollo de Aplicaciones  
+> **Estudiante:** Luigi Henri Arismendi Toro  
+> **Institución:** Universidad Nacional Experimental de los Llanos Occidentales "Ezequiel Zamora" (UNELLEZ)  
 
 ---
 
-## 📊 Infografía: Rama Descendente (Fase de Verificación)
+## 📌 Contexto y Propósito del Sistema
+Este repositorio contiene la arquitectura base y el despliegue inicial de un sistema web escalable. El desarrollo se rige bajo los estándares de la **Metodología en V**, garantizando la trazabilidad estricta entre el diseño conceptual, la arquitectura técnica y la codificación modular.
+
+---
+
+## 📊 Arquitectura Visual: Metodología en V (Rama Descendente y Ascendente)
 
 ```mermaid
-graph TD
-    A[Análisis de Requisitos] --> B[Análisis del Sistema]
-    B --> C[Diseño de Software / Arquitectura]
-    C --> D[Diseño de Módulos]
-    D --> E[Punto de Inflexión: Codificación]
+graph TB
+    subgraph Fase_Descendente ["Rama Descendente (Diseño y Verificación Conceptual)"]
+        A[1. Análisis de Requisitos] --> B[2. Análisis del Sistema]
+        B --> C[3. Diseño de Arquitectura MVT]
+        C --> D[4. Diseño de Módulos y Base de Datos]
+        D --> E[5. Punto de Inflexión: Codificación Base]
+    end
 
-    style A fill:#3498db,stroke:#2980b9,stroke-width:2px,color:#fff
-    style B fill:#2ecc71,stroke:#27ae60,stroke-width:2px,color:#fff
-    style C fill:#f1c40f,stroke:#f39c12,stroke-width:2px,color:#fff
-    style D fill:#9b59b6,stroke:#8e44ad,stroke-width:2px,color:#fff
-    style E fill:#e74c3c,stroke:#c0392b,stroke-width:2px,color:#fff
-```
+    subgraph Fase_Ascendente ["Rama Ascendente (Validación y Pruebas)"]
+        E --> F[6. Pruebas Unitarias - Módulos]
+        F --> G[7. Pruebas de Integración - Django/DB]
+        G --> H[8. Pruebas de Sistema - Flujos y Roles]
+        H --> I[9. Pruebas de Aceptación - Validación Final]
+    end
 
----
-
-## 🔽 Fases Descendentes de la Metodología
-
-1. **Análisis de Requisitos (Requirement Gathering):** 
-   * Definición de las necesidades del usuario y funcionalidades requeridas en el sistema.
-2. **Análisis del Sistema (System Analysis):** 
-   * Especificación del comportamiento general del software y la arquitectura funcional.
-3. **Diseño de Software / Arquitectura (Software Design):** 
-   * Definición de los componentes principales, interfaces y el stack tecnológico (Python, Django, Vite.js, Docker).
-4. **Diseño de Módulos (Module Design):** 
-   * Detalle de la lógica interna, algoritmos y modelo de datos para cada módulo.
-5. **Punto de Inflexión: Codificación (Coding):** 
-   * Construcción del código fuente y desarrollo efectivo del proyecto.
-
----
-
-## 👥 Roles y Niveles de Acceso
-- **Administrador:** Gestión total desde el panel Django Admin (`/admin`).
-- **Gestor:** Administración de datos operativos y reportes.
-- **Usuario:** Acceso a vistas privadas de usuario registrado.
-- **Visitante:** Acceso a landing pública, login y registro.
+    style A fill:#1f77b4,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#2ca02c,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#ff7f0e,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#9467bd,stroke:#fff,stroke-width:2px,color:#fff
+    style E fill:#d62728,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#17becf,stroke:#fff,stroke-width:2px,color:#fff
+    style G fill:#bcbd22,stroke:#fff,stroke-width:2px,color:#fff
+    style H fill:#e377c2,stroke:#fff,stroke-width:2px,color:#fff
+    style I fill:#8c564b,stroke:#fff,stroke-width:2px,color:#fff
